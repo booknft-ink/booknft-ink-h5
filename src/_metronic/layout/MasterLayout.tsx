@@ -58,7 +58,7 @@ const MasterLayout: FC<WithChildren> = ({children}) => {
 
         {/* begin:: Drawers */}
         <ActivityDrawer />
-        <RightToolbar />
+        {/* <RightToolbar /> */}
         <DrawerMessenger />
         {/* end:: Drawers */}
 

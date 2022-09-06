@@ -7,10 +7,12 @@ export function MenuInner() {
   const intl = useIntl()
   return (
     <>
-      <MenuItem title={intl.formatMessage({id: 'MENU.DASHBOARD'})} to='/dashboard' />
-      <MenuItem title='Layout Builder' to='/builder' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.GUARD'})} to='/guard' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.GUARD'})} to='/builder' />
+      <MenuItem title='My Page' to='/ufo' />
+
       <MenuInnerWithSub
-        title='Crafted'
+        title='Museum'
         to='/crafted'
         menuPlacement='bottom-start'
         menuTrigger='click'
@@ -99,7 +101,12 @@ export function MenuInner() {
         </MenuInnerWithSub>
       </MenuInnerWithSub>
 
-      <MenuInnerWithSub title='Apps' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
+      <MenuInnerWithSub
+        title='Read Books'
+        to='/apps'
+        menuPlacement='bottom-start'
+        menuTrigger='click'
+      >
         {/* PAGES */}
         <MenuInnerWithSub
           title='Chat'
@@ -118,15 +125,6 @@ export function MenuInner() {
           to='/apps/user-management/users'
           title='User management'
         />
-      </MenuInnerWithSub>
-      <MenuInnerWithSub
-        isMega={true}
-        title='Mega menu'
-        to='/mega-menu'
-        menuPlacement='bottom-start'
-        menuTrigger='click'
-      >
-        <MegaMenu />
       </MenuInnerWithSub>
     </>
   )

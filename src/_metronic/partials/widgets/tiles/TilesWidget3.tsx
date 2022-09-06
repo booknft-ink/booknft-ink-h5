@@ -17,20 +17,20 @@ const TilesWidget3 = ({
   return (
     <div
       className={clsx('card h-100 bgi-no-repeat bgi-size-cover', className)}
-      style={{backgroundImage: `url("${toAbsoluteUrl('/media/misc/bg-2.jpg')}")`}}
+      style={{backgroundImage: `url("${toAbsoluteUrl('/media/book/laozi.jpeg')}")`}}
     >
       {/* begin::Body */}
       <div className='card-body d-flex flex-column justify-content-between'>
         {/* begin::Title */}
         <div className='text-white fw-bold fs-2'>
-          <h2 className='fw-bold text-white mb-2'>Create Reports</h2>
-          With App
+          <h2 className='fw-bold text-white mb-2'>论语</h2>
+          即将于10月开始上链
         </div>
         {/* end::Title */}
 
         {/* begin::Link */}
         <a href='#' className='text-warning fw-semibold'>
-          Create Report
+          Opeasea
           <KTSVG
             className='svg-icon-2 svg-icon-warning'
             path='/media/icons/duotune/arrows/arr064.svg'

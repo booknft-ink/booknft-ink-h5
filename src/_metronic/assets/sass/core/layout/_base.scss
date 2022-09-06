@@ -17,8 +17,10 @@ body {
     font-size: $root-font-size !important;
     font-weight: $font-weight-base;
     font-family: $font-family-sans-serif;
-    background-image: url('../../../../../../public/media/patterns/header-bg.jpg');
-
+    // background-image: url('../../../../../../public/media/patterns/header-bg.jpg');
+    background-image: url('../../../../../../public/media/book/guohua_bg.jpeg');
+    background-size: 100% 600px !important;
+    background-repeat: no-repeat;
     // Tablet mode
     @include media-breakpoint-down(lg) {
         font-size: $root-font-size-lg !important;
@@ -48,4 +50,17 @@ canvas {
 // Angular integration
 router-outlet {
     display: none;
+}
+#root{
+    z-index: 2;
+}
+
+.header-mask{
+    width: 100%;
+    height: 600px;
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 0;
+    border-radius: 0% 0% 5% 5%;
 }

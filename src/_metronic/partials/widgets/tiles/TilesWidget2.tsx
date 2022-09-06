@@ -11,8 +11,8 @@ type Props = {
 const TilesWidget2 = ({
   className,
   bgColor = '#663259',
-  title = 'Create SaaS',
-  title2 = 'Based Reports',
+  title = '周易',
+  title2 = '古圣先贤的智慧',
 }: Props) => {
   return (
     <div
@@ -27,17 +27,6 @@ const TilesWidget2 = ({
         <h2 className='text-white fw-bold mb-5'>
           {title} <br /> {title2}{' '}
         </h2>
-
-        <div className='m-0'>
-          <a
-            href='#'
-            className='btn btn-danger fw-semibold px-6 py-3'
-            data-bs-toggle='modal'
-            data-bs-target='#kt_modal_create_app'
-          >
-            Create Campaign
-          </a>
-        </div>
       </div>
     </div>
   )

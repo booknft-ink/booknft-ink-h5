@@ -2,7 +2,7 @@
 import React from 'react'
 import {Modal} from 'react-bootstrap'
 import {KTSVG, toAbsoluteUrl} from '../../helpers'
-// import {ListsWidget4, ListsWidget5} from '../widgets'
+// import {ListsWidget4, ActivitiesWidget} from '../widgets'
 
 type Props = {
   show: boolean
@@ -139,7 +139,7 @@ const SearchModal: React.FC<Props> = ({show, handleClose}) => {
             {/* begin::Tutorials */}
             <div className='pb-10'>
               <h3 className='text-dark fw-bold fs-1 mb-6'>Tutorials</h3>
-              {/*<ListsWidget5 className='mb-5 shadow-none' innerPadding='px-0' />*/}
+              {/*<ActivitiesWidget className='mb-5 shadow-none' innerPadding='px-0' />*/}
             </div>
             {/* end::Tutorials */}
           </div>
