@@ -23,7 +23,7 @@ const PrivateRoutes = () => {
         {/* Redirect to Dashboard after success login/registartion */}
         <Route path='auth/*' element={<Navigate to='/guard' />} />
         {/* Pages */}
-        <Route path='/ufo' element={<IndexPage />} />
+        <Route path='classical' element={<IndexPage />} />
         <Route path='guard' element={<DashboardWrapper />} />
         <Route path='builder' element={<BuilderPageWrapper />} />
         <Route path='menu-test' element={<MenuTestPage />} />
